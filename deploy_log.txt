@@ -1,0 +1,19 @@
+Starting deployment... 
+Date: 09-02-2026 20:31:10.40 
+Preparing files (Running git add)... 
+Saving changes (Running git commit)... 
+[main 8b6a0a7] Update portfolio: Remove Engineers Day 2025 Certificate
+ 2 files changed, 4 insertions(+), 7 deletions(-)
+Synchronizing with GitHub (Running git pull)... 
+error: cannot pull with rebase: You have unstaged changes.
+error: Please commit or stash them.
+Uploading to website (Running git push)... 
+To https://github.com/vigneshvl-dev/PORTFOLIO.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/vigneshvl-dev/PORTFOLIO.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+Done! 

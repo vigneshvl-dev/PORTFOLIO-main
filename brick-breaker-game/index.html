@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brick Breaker | V.L. Vignesh</title>
+    <meta name="description" content="Classic Brick Breaker game built with HTML5 Canvas and JavaScript">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">PORTFOLIO<span class="dot">.</span></a>
+            <a href="index.html" class="back-btn">← Back to Portfolio</a>
+        </div>
+    </nav>
+
+    <!-- Game Container -->
+    <main class="game-main">
+        <div class="game-container">
+            <div class="game-header">
+                <h1 class="game-title">BRICK BREAKER</h1>
+                <p class="game-subtitle">Classic arcade game reimagined</p>
+            </div>
+
+            <div class="game-stats">
+                <div class="stat-item">
+                    <span class="stat-label">Score</span>
+                    <span class="stat-value" id="score">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Lives</span>
+                    <span class="stat-value" id="lives">3</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Level</span>
+                    <span class="stat-value" id="level">1</span>
+                </div>
+            </div>
+
+            <div class="canvas-wrapper">
+                <canvas id="gameCanvas"></canvas>
+                <div id="gameOverlay" class="game-overlay">
+                    <div class="overlay-content">
+                        <h2 id="overlayTitle">BRICK BREAKER</h2>
+                        <p id="overlayMessage">Press SPACE or Click to Start</p>
+                        <button id="startButton" class="game-button">START GAME</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game-controls">
+                <div class="control-info">
+                    <span class="control-key">← →</span>
+                    <span class="control-desc">Move Paddle</span>
+                </div>
+                <div class="control-info">
+                    <span class="control-key">SPACE</span>
+                    <span class="control-desc">Launch Ball / Pause</span>
+                </div>
+                <div class="control-info">
+                    <span class="control-key">MOUSE</span>
+                    <span class="control-desc">Move Paddle</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 V.L. Vignesh. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
