@@ -474,6 +474,38 @@ h6 {
     }
 }
 
+.eagle-orbit-container {
+    position: absolute;
+    width: 440px;
+    height: 440px;
+    z-index: 3;
+    pointer-events: none;
+    animation: float 6s ease-in-out infinite;
+}
+
+.eagle-orbit {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    animation: rotate-orbit 8s linear infinite;
+}
+
+.eagle-img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 80px;
+    height: auto;
+    transform: translate(-50%, -50%) rotate(90deg);
+    mix-blend-mode: screen;
+    filter: drop-shadow(0 0 15px rgba(6, 182, 212, 0.8));
+}
+
+@keyframes rotate-orbit {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
 .image-blob {
     position: absolute;
     width: 450px;
