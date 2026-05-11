@@ -76,19 +76,21 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('github-repo-count').innerText = '15+'; // Fallback
         }
 
-        // Fetch LeetCode Solved (Unofficial API Wrapper)
+        // Fetch LeetCode Solved (Community API)
         try {
-            // Using a common public API wrapper for LeetCode stats
-            const leetcodeRes = await fetch('https://leetcode-stats-api.herokuapp.com/vigneshvl');
+            // Using a more reliable public API wrapper for LeetCode stats
+            const leetcodeRes = await fetch('https://leetcode-stats-api.onrender.com/vigneshvl');
             const leetcodeData = await leetcodeRes.json();
             if (leetcodeData.status === 'success' && leetcodeData.totalSolved !== undefined) {
                 document.getElementById('leetcode-solved-count').innerText = leetcodeData.totalSolved;
             } else {
-                document.getElementById('leetcode-solved-count').innerText = '50+'; // Fallback
+                // Fallback placeholder if API returns unexpected data
+                document.getElementById('leetcode-solved-count').innerText = '—';
             }
         } catch (error) {
             console.error('Error fetching LeetCode stats:', error);
-            document.getElementById('leetcode-solved-count').innerText = '50+'; // Fallback
+            // Show placeholder on error
+            document.getElementById('leetcode-solved-count').innerText = '—';
         }
     };
 
